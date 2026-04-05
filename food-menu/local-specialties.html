@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Specialties Menu - Blue Breeze Resort</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/food-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Subtle Background Image -->
+    <div class="subtle-bg-image">
+        <img src="https://sspark.genspark.ai/cfimages?u1=5eug4oYmBAC6Eku1OSe2Be7hdKI1IvoCSNp92mqp6jqUmuoJCraHR0QviZhCpIQlYT2lLJO4pj9MdUiyB8Qo1FA4nkAOwqzGqdrBdjhNI1feEQAkWAs%2F%2F%2BfPPENuZxVjQ1LvMQ5QfkfJ&u2=O5yFTwWVp7auAtWe&width=2560" alt="Subtle beach background" class="bg-image">
+        <div class="bg-image-overlay"></div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <h1>Blue Breeze Resort</h1>
+                        <p class="tagline">Where Paradise Meets Comfort</p>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#gallery">Gallery</a></li>
+                        <li><a href="../index.html#rooms">Rooms</a></li>
+                        <li><a href="../index.html#amenities">Amenities</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Menu <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="breakfast.html">Breakfast</a></li>
+                                <li><a href="lunch.html">Lunch</a></li>
+                                <li><a href="dinner.html">Dinner</a></li>
+                                <li><a href="beverages.html">Beverages</a></li>
+                                <li><a href="desserts.html">Desserts</a></li>
+                                <li><a href="local-specialties.html">Local Specialties</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#food-menu">Menu</a></li>
+                    <li class="active">Local Specialties</li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Local Specialties Menu Header -->
+            <section class="food-page-header">
+                <div class="container">
+                    <div class="page-header-content">
+                        <div class="page-icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h1 class="page-title">Local Specialties Menu</h1>
+                        <p class="page-description">Authentic Konkan coastal cuisine featuring fresh seafood and traditional Malvani flavors</p>
+                        <div class="page-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Local Dishes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-time">Lunch & Dinner</span>
+                                <span class="stat-label">Serving Times</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-price">₹320 - ₹480</span>
+                                <span class="stat-label">Price Range</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Local Specialties Menu Items -->
+            <section class="food-page-menu">
+                <div class="container">
+                    <div class="menu-intro">
+                        <h2>Coastal Konkan Flavors</h2>
+                        <p>Experience the authentic taste of Malvani cuisine with our carefully prepared local specialties</p>
+                    </div>
+
+                    <div class="menu-items-grid" id="local-specialties-items">
+                        <!-- Local specialties items will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Local Specialties Information -->
+            <section class="food-specials">
+                <div class="container">
+                    <h2 class="specials-title">Konkan Culinary Heritage</h2>
+                    <div class="specials-grid">
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-fish"></i>
+                            </div>
+                            <h3>Fresh Catch Daily</h3>
+                            <p>Locally sourced seafood prepared with authentic Malvani spices</p>
+                        </div>
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-pepper-hot"></i>
+                            </div>
+                            <h3>Traditional Spices</h3>
+                            <p>Authentic Konkan masalas and preparation methods</p>
+                        </div>
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-coconut"></i>
+                            </div>
+                            <h3>Coconut-Based</h3>
+                            <p>Traditional coconut-based curries and preparations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Menus -->
+            <section class="related-menus">
+                <div class="container">
+                    <h2 class="related-title">Complete Your Experience</h2>
+                    <div class="related-grid">
+                        <a href="lunch.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Lunch Menu</h3>
+                            <p>Fresh and flavorful lunch dishes</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="dinner.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <h3>Dinner Menu</h3>
+                            <p>Elegant dinner selections</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="beverages.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h3>Beverages</h3>
+                            <p>Refreshing drinks and beverages</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Blue Breeze Resort</h3>
+                        <p>Your paradise destination for luxury and relaxation.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html#gallery">Gallery</a></li>
+                            <li><a href="../index.html#rooms">Rooms</a></li>
+                            <li><a href="../index.html#amenities">Amenities</a></li>
+                            <li><a href="../index.html#food-menu">Menu</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Our Menus</h4>
+                        <ul>
+                            <li><a href="breakfast.html">Breakfast</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                            <li><a href="local-specialties.html">Local Specialties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +91-8425861795</li>
+                            <li><i class="fas fa-envelope"></i> sales@bluebreezeresort.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Blue Breeze Resort, Coastal Highway, Konkan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Blue Breeze Resort. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/components/food-pages.js"></script>
+    <script>
+        // Initialize local specialties page
+        document.addEventListener('DOMContentLoaded', function() {
+            const foodPage = new FoodPagesComponent('local-specialties');
+        });
+    </script>
+</body>
+</html>

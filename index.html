@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Breeze Resort - Paradise Awaits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support MP4 -->
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Subtle Background Image -->
+    <div class="subtle-bg-image">
+        <img src="assets/images/hero/beach3.jpeg" alt="Subtle beach background" class="bg-image">
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Blue Breeze Resort</h1>
+                    <p class="tagline">Where Paradise Meets Comfort</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#food-menu">Menu</a></li>
+                    <li><a href="#nearby-attractions">Nearby Attractions</a></li>
+                    <li><a href="#events-offers" class="highlight-nav">Events & Offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p>Blue Breeze Resort welcomes you to celebrate the tranquility and calmness of the konkan coast , where you can experience the calm breeze with great experiences of sunrise, sunsets and best costal cuisine.</p>
+                <button class="cta-button">Book Your Stay</button>
+            </div>
+        </section>
+
+        <!-- Events & Offers Section -->
+        <section id="events-offers" class="events-offers-section">
+            <div class="container">
+                <h2 class="section-title">Discover Tranquility, Productivity, and Joy—Right on the Shores of Ladghar Beach!</h2>
+                <p class="section-subtitle">
+                    Escape the routine and enter a blissful midweek retreat at Blue Breeze Resort, 
+                    nestled on the serene and scenic Ladghar Beach. Whether it's a vibrant women's retreat, 
+                    an inspiring Work-from-Beach experience, or a peaceful escape tailored for Senior Citizens, 
+                    we've crafted the perfect getaway to refresh your mind, body, and soul.
+                </p>
+                
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-person-dress"></i><i class="fas fa-person-dress"></i><i class="fas fa-person-dress"></i>
+                        </div>
+                        <h3>Women's Midweek Retreat </h3>
+                        <p>Escape to Serenity with Our Midweek Kitty Party Retreat!</p>
+                        <div class="event-price">Duration: 2-night stay (Monday to Wednesday or Wednesday to Friday)</div>
+                         <div class="event-price">Accommodation: Deluxe cottage, 50 metres from the beach</div>
+                         <div class="event-price">Meals: 2 X Lunch, 2 X Dinner, 2 X Breakfast for three guests</div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fa-solid fa-house-laptop"></i><i class="fa-solid fa-umbrella-beach"></i>
+                        </div>
+                        <h3>Work from beach!</h3>
+                        <p>Balance your productivity with ultimate relaxation, all while staying connected by the beach.</p>
+                        <div class="event-price">Duration: 2/4/5-night stay (Between Monday to Friday)</div>
+                        <div class="event-price">Accommodation: Deluxe cottage, 50 metres from the beach</div>
+                        <div class="event-price">Meals: 2 X Lunch, 2 X Dinner, 2 X Breakfast</div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fa-solid fa-person-walking-with-cane"></i><i class="fa-solid fa-chair"></i>
+                        </div>
+                        <h3>Senior Citizens transquil escape</h3>
+                        <p>Reserve your peaceful getaway now and create lasting memories!</p>
+                        <div class="event-price">Duration: 2-night stay (Monday to Wednesday or Wednesday to Friday)</div>
+                        <div class="event-price">Accommodation: Premium Cottages 50 metres from the beach, wheelchair accessible cottage also available</div>
+                        <div class="event-price">Meals: 2 X Lunch, 2 X Dinner, 2 X Breakfast for two guests</div>
+                        <p>Below Special Arrangments can be provided :
+                            Morning nature walks along the beach
+                            Meals can be customized to suit health requirements
+                            Relax under the stars post-dinner
+                            Mike and speaker system can be arranged</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nearby Attractions Section -->
+        <section id="nearby-attractions" class="nearby-attractions-section">
+            <div class="container">
+                <h2 class="section-title">Nearby Attractions</h2>
+                <p class="section-subtitle">Discover the beautiful surroundings of Blue Breeze Resort at Ladghar Beach</p>
+                
+                <!-- Google Map -->
+                <div style="margin: 3rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d73.3!3d17.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI3JzI0LjgiTiA3M8KwMTcnMjIuMCJF!5e0!3m2!1sen!2sin"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <!-- Contact Info -->
+                <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 12px;">
+                    <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Blue Breeze Resort</h3>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: #ff5252; margin-right: 0.5rem;"></i>Blue Breeze Resort, 436 Ladhghar Beach, Dapoli Ratnagiri District, Maharashtra, India</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone" style="color: #4CAF50; margin-right: 0.5rem;"></i>+91-8425861795 | +91-8425861796</p>
+                    <p><i class="fas fa-envelope" style="color: #2196F3; margin-right: 0.5rem;"></i>sales@bluebreezeresort.com</p>
+                </div>
+                
+                <!-- Attractions Grid -->
+                <div class="attractions-grid">
+                    <div class="attraction-card">
+                        <div class="attraction-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h3>Ladghar Beach</h3>
+                        <p>Just a 2-minute walk from the resort, this pristine beach offers red sand, beautiful sunsets, and peaceful atmosphere.</p>
+                        <div class="attraction-distance">
+                            <i class="fas fa-walking"></i>2 minutes walk
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-card">
+                        <div class="attraction-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3>Ancient Temples</h3>
+                        <p>Visit historic temples nearby and experience the spiritual heritage of the Konkan region.</p>
+                        <div class="attraction-distance">
+                            <i class="fas fa-car"></i>5-10 minutes drive
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-card">
+                        <div class="attraction-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Water Sports</h3>
+                        <p>Enjoy various water activities and adventure sports available at nearby beaches.</p>
+                        <div class="attraction-distance">
+                            <i class="fas fa-car"></i>10-15 minutes drive
+                        </div>
+                    </div>
+                    
+                    <div class="attraction-card">
+                        <div class="attraction-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Scenic Viewpoints</h3>
+                        <p>Breathtaking viewpoints offering panoramic views of the Konkan coastline.</p>
+                        <div class="attraction-distance">
+                            <i class="fas fa-hiking"></i>15-20 minutes trek
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Resort Gallery</h2>
+                <p class="section-subtitle">Discover the beauty of our resort through these stunning images</p>
+                
+                <!-- Single Image Carousel -->
+                <div class="gallery-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-arrow carousel-prev" aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <div class="carousel-image-container">
+                            <img class="carousel-image" src="" alt="Resort gallery image" loading="lazy">
+                            <div class="carousel-overlay">
+                                <h3 class="carousel-title"></h3>
+                                <p class="carousel-description"></p>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-arrow carousel-next" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="rooms-section">
+            <div class="container">
+                <h2 class="section-title">Our Accommodations</h2>
+                <p class="section-subtitle">Choose from our luxurious room categories, each designed for your comfort</p>
+                
+                <div class="rooms-grid" id="rooms-container">
+                    <!-- Rooms will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="amenities-section">
+            <div class="container">
+                <h2 class="section-title">Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3>Sea front</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-child"></i>
+                        <h3>Childrens Play Area</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Restaurant</h3>
+                    </div>
+                     <div class="amenity-item">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Ampitheatre</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free Wifi</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-water"></i>
+                        <h3>Water Sports</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-car"></i>
+                        <h3>Parking</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Menu Section -->
+        <section id="food-menu" class="food-menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Savor the flavors of the Konkan coast with our exquisite dining options</p>
+                
+                <!-- Menu Categories Filter -->
+                <div class="menu-categories" id="menu-categories">
+                    <!-- Categories will be dynamically loaded here -->
+                </div>
+                
+                <!-- Menu Items Grid -->
+                <div class="menu-grid" id="menu-items">
+                    <!-- Menu items will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item inline-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Blue Breeze Resort, 436 Ladhghar Beach, Dapoli Ratnagiri District, Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item inline-contact">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-details">
+                                <h3>Reservations</h3>
+                                <p>+91-8425861795 | +91-8425861796</p>
+                            </div>
+                        </div>
+                        <div class="contact-item inline-contact">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>sales@bluebreezeresort.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blue Breeze Resort</h3>
+                    <p>Your paradise destination for luxury and relaxation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#food-menu">Menu</a></li>
+                        <li><a href="#nearby-attractions">Nearby Attractions</a></li>
+                        <li><a href="#events-offers">Events & Offers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bluebreezeresort?igsh=MXdlYXV3azJyZDVleA=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blue Breeze Resort. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Room Details Modal -->
+    <div id="roomModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="roomDetails"></div>
+        </div>
+    </div>
+
+    <script>
+        // Video loading optimization
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.bg-video');
+            const videoBackground = document.querySelector('.video-background');
+            
+            // Check if device supports video backgrounds well
+            const isMobile = window.innerWidth <= 768;
+            const isLowEndDevice = navigator.hardwareConcurrency <= 2;
+            
+            if (isMobile || isLowEndDevice) {
+                // Use gradient background instead of video
+                video.style.display = 'none';
+                videoBackground.style.background = 'linear-gradient(45deg, #0066cc, #00a8cc)';
+            } else {
+                // Optimize video loading
+                video.addEventListener('loadeddata', function() {
+                    console.log('Video background loaded successfully');
+                });
+                
+                video.addEventListener('error', function() {
+                    console.log('Video failed to load, using gradient fallback');
+                    video.style.display = 'none';
+                    videoBackground.style.background = 'linear-gradient(45deg, #0066cc, #00a8cc)';
+                });
+            }
+            
+            // Optimize background image loading
+            const bgImage = document.querySelector('.bg-image');
+            if (bgImage) {
+                bgImage.addEventListener('load', function() {
+                    console.log('Background image loaded successfully');
+                });
+                
+                bgImage.addEventListener('error', function() {
+                    console.log('Background image failed to load');
+                    document.querySelector('.subtle-bg-image').style.display = 'none';
+                });
+            }
+        });
+    </script>
+
+    <!-- Component Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/components/contact.js"></script>
+    <script src="js/components/cta.js"></script>
+    <script src="js/components/gallery.js"></script>
+    <script src="js/components/food-menu.js"></script>
+    <script src="js/components/rooms.js"></script>
+    <script src="js/components/navigation.js"></script>
+    <script src="js/app.js"></script>
+    </div>
+</body>
+</html>

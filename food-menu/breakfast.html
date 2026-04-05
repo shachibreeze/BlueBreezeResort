@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Menu - Blue Breeze Resort</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/food-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Subtle Background Image -->
+    <div class="subtle-bg-image">
+        <img src="https://sspark.genspark.ai/cfimages?u1=5eug4oYmBAC6Eku1OSe2Be7hdKI1IvoCSNp92mqp6jqUmuoJCraHR0QviZhCpIQlYT2lLJO4pj9MdUiyB8Qo1FA4nkAOwqzGqdrBdjhNI1feEQAkWAs%2F%2F%2BfPPENuZxVjQ1LvMQ5QfkfJ&u2=O5yFTwWVp7auAtWe&width=2560" alt="Subtle beach background" class="bg-image">
+        <div class="bg-image-overlay"></div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <h1>Blue Breeze Resort</h1>
+                        <p class="tagline">Where Paradise Meets Comfort</p>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#gallery">Gallery</a></li>
+                        <li><a href="../index.html#rooms">Rooms</a></li>
+                        <li><a href="../index.html#amenities">Amenities</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Menu <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="breakfast.html">Breakfast</a></li>
+                                <li><a href="lunch.html">Lunch</a></li>
+                                <li><a href="dinner.html">Dinner</a></li>
+                                <li><a href="beverages.html">Beverages</a></li>
+                                <li><a href="desserts.html">Desserts</a></li>
+                                <li><a href="local-specialties.html">Local Specialties</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#food-menu">Menu</a></li>
+                    <li class="active">Breakfast</li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Breakfast Menu Header -->
+            <section class="food-page-header">
+                <div class="container">
+                    <div class="page-header-content">
+                        <div class="page-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h1 class="page-title">Breakfast Menu</h1>
+                        <p class="page-description">Start your day with our delicious breakfast options featuring authentic Konkan flavors and international favorites</p>
+                        <div class="page-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Breakfast Items</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-time">7:00 AM - 10:30 AM</span>
+                                <span class="stat-label">Serving Hours</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-price">₹180 - ₹450</span>
+                                <span class="stat-label">Price Range</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breakfast Menu Items -->
+            <section class="food-page-menu">
+                <div class="container">
+                    <div class="menu-intro">
+                        <h2>Morning Delights</h2>
+                        <p>From traditional Konkan breakfast to continental favorites, we offer a perfect start to your day</p>
+                    </div>
+
+                    <div class="menu-items-grid" id="breakfast-items">
+                        <!-- Breakfast items will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breakfast Specials -->
+            <section class="food-specials">
+                <div class="container">
+                    <h2 class="specials-title">Chef's Breakfast Recommendations</h2>
+                    <div class="specials-grid">
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Fresh & Healthy</h3>
+                            <p>All our breakfast items are prepared fresh daily with locally sourced ingredients</p>
+                        </div>
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Vegetarian Options</h3>
+                            <p>Multiple vegetarian and vegan breakfast choices available</p>
+                        </div>
+                        <div class="special-item">
+                            <div class="special-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Quick Service</h3>
+                            <p>Most breakfast items ready within 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Menus -->
+            <section class="related-menus">
+                <div class="container">
+                    <h2 class="related-title">Explore Other Menus</h2>
+                    <div class="related-grid">
+                        <a href="lunch.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Lunch Menu</h3>
+                            <p>Fresh and flavorful lunch dishes</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="beverages.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h3>Beverages</h3>
+                            <p>Refreshing drinks and beverages</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="local-specialties.html" class="related-card">
+                            <div class="related-icon">
+                                <i class="fas fa-fish"></i>
+                            </div>
+                            <h3>Local Specialties</h3>
+                            <p>Authentic Konkan coastal cuisine</p>
+                            <span class="related-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Blue Breeze Resort</h3>
+                        <p>Your paradise destination for luxury and relaxation.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html#gallery">Gallery</a></li>
+                            <li><a href="../index.html#rooms">Rooms</a></li>
+                            <li><a href="../index.html#amenities">Amenities</a></li>
+                            <li><a href="../index.html#food-menu">Menu</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Our Menus</h4>
+                        <ul>
+                            <li><a href="breakfast.html">Breakfast</a></li>
+                            <li><a href="lunch.html">Lunch</a></li>
+                            <li><a href="dinner.html">Dinner</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                            <li><a href="local-specialties.html">Local Specialties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Blue Breeze Resort. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/components/food-pages.js"></script>
+    <script>
+        // Initialize breakfast page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeFoodPage('breakfast');
+        });
+    </script>
+</body>
+</html>

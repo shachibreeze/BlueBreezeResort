@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Fix Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            text-align: center;
+        }
+        .cta-button {
+            background: #2c5282;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .cta-button:hover {
+            background: #3b82f6;
+        }
+        .cta-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .test-result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>CTA Component Fix Test</h1>
+    <p>Click the button below to test if multiple windows are prevented.</p>
+    
+    <button class="cta-button">Book Your Stay</button>
+    
+    <div class="test-result">
+        <h3>Test Instructions:</h3>
+        <ol>
+            <li>Click the "Book Your Stay" button multiple times quickly</li>
+            <li>Only ONE booking form window should open</li>
+            <li>The button should be temporarily disabled during the process</li>
+            <li>The form should submit to shachisheth94@gmail.com</li>
+        </ol>
+        
+        <h3>Expected Behavior:</h3>
+        <ul>
+            <li>✅ Single form window opens</li>
+            <li>✅ Button shows click animation</li>
+            <li>✅ Form sends email to shachisheth94@gmail.com</li>
+            <li>✅ No duplicate windows</li>
+        </ul>
+    </div>
+
+    <!-- Include the necessary components -->
+    <script src="js/utils.js"></script>
+    <script src="js/components/cta.js"></script>
+    
+    <script>
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('CTA Component initialized. Click the button to test.');
+        });
+    </script>
+</body>
+</html>
