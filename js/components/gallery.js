@@ -19,7 +19,6 @@ class GalleryComponent {
         this.loadCarousel();
         this.setupEventListeners();
         this.startAutoPlay();
-        this.createIndicators();
     }
 
     cacheDomElements() {
@@ -167,7 +166,6 @@ class GalleryComponent {
     // Method to add new images to carousel
     addImage(imageData) {
         this.galleryData.push(imageData);
-        this.createIndicators();
     }
 
     // Method to remove images from carousel
@@ -178,7 +176,6 @@ class GalleryComponent {
                 this.currentIndex = this.galleryData.length - 1;
             }
             this.loadCarousel();
-            this.createIndicators();
         }
     }
 }

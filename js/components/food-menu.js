@@ -46,7 +46,7 @@ class FoodMenuComponent {
 
         this.menuData.categories.forEach(category => {
             categoriesHTML += `
-                <button class="menu-category-btn ${category.id === 'breakfast' ? 'active' : ''}" data-category="${category.id}">
+                <button class="menu-category-btn" data-category="${category.id}">
                     <i class="${category.icon}"></i>
                     <span>${category.name}</span>
                 </button>
@@ -60,7 +60,7 @@ class FoodMenuComponent {
         const menuContainer = document.getElementById('menu-items');
         if (!menuContainer) return;
 
-        const itemsToRender = items || this.menuData.items.filter(item => item.category === 'breakfast');;
+        const itemsToRender = items || this.menuData.items.filter(item => item.category === 'none');
 
         let menuHTML = '';
         itemsToRender.forEach(item => {
@@ -87,8 +87,7 @@ class FoodMenuComponent {
             menuHTML = `
                 <div class="no-items-found">
                     <i class="fas fa-utensils"></i>
-                    <h3>No items found</h3>
-                    <p>Please try a different category</p>
+                    <p>Please select a category to see menu</p>
                 </div>
             `;
         }

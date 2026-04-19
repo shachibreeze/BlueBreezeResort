@@ -11,8 +11,6 @@ class ResortApp {
     init() {
         if (this.isInitialized) return;
         
-        console.log('🏖️ Initializing Blue Breeze Resort App...');
-        
         // Initialize utilities first
         this.initUtilities();
         
@@ -27,8 +25,6 @@ class ResortApp {
         
         // Mark as initialized
         this.isInitialized = true;
-        
-        console.log('✅ Blue Breeze Resort App initialized successfully!');
     }
 
     initUtilities() {
@@ -103,20 +99,6 @@ class ResortApp {
         window.addEventListener('scroll', Utils.throttle(() => {
             this.handleScroll();
         }, 100));
-
-        // Handle page visibility change
-        document.addEventListener('visibilitychange', () => {
-            this.handleVisibilityChange();
-        });
-
-        // Handle offline/online events
-        window.addEventListener('online', () => {
-            this.handleOnline();
-        });
-
-        window.addEventListener('offline', () => {
-            this.handleOffline();
-        });
     }
 
     handleResize() {
@@ -159,26 +141,6 @@ class ResortApp {
                 }
             }
         });
-    }
-
-    handleVisibilityChange() {
-        if (document.hidden) {
-            // Page is hidden - pause any animations or timers
-            console.log('Page hidden - pausing activities');
-        } else {
-            // Page is visible again - resume activities
-            console.log('Page visible - resuming activities');
-        }
-    }
-
-    handleOnline() {
-        console.log('📶 Connection restored');
-        // Could retry failed requests or sync data
-    }
-
-    handleOffline() {
-        console.log('📵 Connection lost');
-        // Could show offline message or cache data
     }
 
     // Public API methods
@@ -225,13 +187,6 @@ class ResortApp {
         };
     }
 
-    // Debug methods
-    debug() {
-        console.log('🏖️ Resort App Debug Info:', this.getInfo());
-        console.log('📊 Data modules:', Object.keys(this.data));
-        console.log('🔧 Components:', this.components);
-    }
-
     // Error handling
     handleError(error, context = '') {
         console.error(`❌ Resort App Error ${context}:`, error);
@@ -251,12 +206,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Make resortApp available globally for debugging
         window.resortApp = resortApp;
-        
-        // Log initialization
-        console.log('🏖️ Blue Breeze Resort Website loaded successfully!');
-        console.log('📋 Available components:', Object.keys(resortApp.components));
-        console.log('💡 Use resortApp.debug() for debugging information');
-        
     } catch (error) {
         console.error('❌ Failed to initialize Resort App:', error);
     }
